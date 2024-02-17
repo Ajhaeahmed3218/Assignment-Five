@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- dasisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font style  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container mx-auto">
+        <nav class="container mx-auto lg:mt-11 raleway">
+            <div class="navbar bg-base-100">
+              <div class="navbar-start">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li class="text-red-500"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <a class="lg:text-4xl text-2xl font-extrabold">P-Ticket</a>
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li ><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Destination</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end">
+                <p class="pr-9 hidden lg:flex"><i class="fa-solid fa-magnifying-glass"></i></p>
+                <a class="btn py-3 px-6 bg-[#1DD1001A] text-[#1DD100]">Bus <img src="B9A5-smart-ticketing-main/images/bus-icon.png" ></a>
+              </div>
+            </div>
+        </nav>
+        <!-- Banner section  -->
+        <section class="container mx-auto h-[60vh] mt-6 ">
+            <div class="  bg-[linear-gradient(45deg,rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url('B9A5-smart-ticketing-main/images/banner.png')] bg-no-repeat lg:px-10 lg:pt-24 lg:pb-12 p-6 bg-cover bg-center rounded-[38px] ">
+                <div class="flex flex-col items-center text-center lg:gap-7 gap-4 lg:py-16">
+                    <h1 class="lg:text-7xl text-3xl text-white font-extrabold raleway">End-to-End Travel with</h1>
+                <h1 class="lg:text-7xl text-3xl text-[#1DD100] font-extrabold raleway">P Paribahan</h1>
+                <p class="lg:w-2/4 text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn bg-[#1DD100] text-black border-none font-bold btn-active btn-secondary mb-10 raleway">Buy Tickets</button>
+                </div>
+                
+
+            </div>
+            <div class="lg:relative  bottom-[60px]">
+                <div class="flex justify-around lg:flex-row flex-col">
+                    <div class="flex justify-center  gap-1 lg:w-1/4 py-6 rounded-2xl border-2 border-b-[#1DD100]  bg-white ">
+                    <div><img src="B9A5-smart-ticketing-main/images/people.png" alt="" srcset=""></div>
+                    <div>
+                        <h1 class="text-3xl font-bold ">500K+</h1>
+                        <p>Registered users</p>
+                    </div>  
+                    </div>
+
+                    <div class="flex justify-center  gap-1 lg:w-1/4 py-6 rounded-2xl border-2 border-b-[#1DD100]  bg-white ">
+                        <div><img src="B9A5-smart-ticketing-main/images/ticket-cupon.png" alt="" srcset=""></div>
+                        <div>
+                            <h1 class="text-3xl font-bold ">1.7 lacks</h1>
+                            <p>Tickets sold</p>
+                        </div>  
+                    </div>
+
+                    <div class="flex justify-center  gap-1 lg:w-1/4 py-6 rounded-2xl border-2 border-b-[#1DD100]  bg-white ">
+                        <div><img src="B9A5-smart-ticketing-main/images/stoppage.png" alt="" srcset=""></div>
+                        <div>
+                            <h1 class="text-3xl font-bold ">80K+</h1>
+                            <p>Rental partners</p>
+                    </div>  
+                    </div>    
+            </div>
+            
+        </section>
+        <!-- Best offers for you -->
+        <section class="flex flex-col items-center gap-y-12 lg:mt-[200px] mt-[400px] inter">
+            <h1 class="text-black font-bold text-4xl raleway">Best offers for you</h1>
+            
+            <div class="flex lg:flex-row flex-col gap-6">
+                <div class="flex items-center justify-around bg-[#FFBF0F] lg:w-[60vh]	w-[60vh] rounded-2xl">
+                    <div class=" ">
+                        <h1 class="text-3xl font-extrabold text-[#030712CC]">15% OFF</h1>
+                        <p class="lg:text-xl text-xs">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="flex  items-center">
+                        <img src="B9A5-smart-ticketing-main/images/cupon-devider.png" alt="" srcset="">
+                        <div class="text-center">
+                        <h1 class="text-3xl font-semibold raleway">NEW15</h1>
+                        <p>Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-around bg-[#F78C9C] lg:w-[60vh]	w-[60vh] rounded-2xl">
+                    <div class=" ">
+                        <h1 class="text-3xl font-extrabold text-[#030712CC]">20% OFF</h1>
+                        <p class="lg:text-xl text-xs">on your next purchase </p>
+                        <p> use by January 2024</p>
+                    </div>
+                    <div class="flex  items-center">
+                        <img src="B9A5-smart-ticketing-main/images/cupon-devider.png" alt="" srcset="">
+                        <div class="text-center">
+                        <h1 class="text-3xl font-semibold raleway">Couple 20</h1>
+                        <p>Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class=" btn border-2 border-[#1DD100] border-solid">See All Offers</button>
+        </section>
+    </header>
+    <main class="border-2 border-solid border-t-[#1DD100] lg:mt-[90px] rounded-[60px] bg-[#F7F8F8]">
+        <!-- P.H Paribahan section  -->
+        <section class="container mx-auto lg:mt-[60px] mt-7">
+            <div class="text-center flex flex-col items-center gap-y-5">
+            <h1 class="text-[40px] font-bold raleway">P.H Paribahan</h1>
+            <p class="text-[#03071299] w-2/4">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-4  items-start  bg-white ">
+                <div class="col-span-2  p-5">
+                    <div class=" flex justify-between items-center mb-4 ">
+                        <div class="flex items-center gap-2">
+                            <div>
+                                <img src="B9A5-smart-ticketing-main/images/bus-logo.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-[32px] font-bold raleway">Greenline Paribahan</h1>
+                                <p class="text-xl inter">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline btn-secondary text-[18px] bg-[#1DD10026] border-none"><img src="B9A5-smart-ticketing-main/images/seat-green.png"><span class="text-[#1DD100]">40</span><span class="text-[#1DD100]">Seats left</span></button>
+                        
+                    </div>
+                    <div class="  bg-[#F7F8F8] p-6 mt-3 flex flex-col gap-9">
+                        <div class="flex justify-between">
+                            <p class="text-[18px] font-semibold text-[#03071299] raleway">Route</p>
+                            <p class="text-[18px] font-semibold text-[#03071299] raleway">Dhaka - Sylhe</p>
+                        </div>
+                        <hr class="border-dashed">
+
+                        <div class="flex justify-between">
+                            <p class="text-[18px] font-semibold text-[#03071299] raleway">Departure Time</p>
+                            <p class="text-[18px] font-semibold text-[#03071299] raleway">9:00 PM</p>
+                        </div>
+                        <hr class="border-dashed">
+                        <div class="flex justify-between">
+                            <button class="btn btn-active bg-[#0307120d] border-none">Boarding Point - Laxmipur</button>
+                            <button class="btn btn-active bg-[#0307120d] border-none">Dropping Point - Bogura</button>
+                            <button class="btn btn-active bg-[#0307120d] border-none">Est. Time - 11 Hour</button>
+
+
+                        </div>
+                    </div>
+                </div>
+               <div class="col-span-1">
+                    <div class=" flex  items-center">
+                        
+                        <img src="B9A5-smart-ticketing-main/images/info-devider.png" alt="" srcset="">
+                        <div class="text-center flex flex-col gap-4 ">
+                        <div class="flex justify-center"><img src="B9A5-smart-ticketing-main/images/fare.png" alt="" srcset=""></div>    
+                        <h1 class="text-3xl font-semibold raleway">550 Taka</h1>
+                        <p class="text-2xl">Per Seat</p>
+                        </div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    
+</body>
+</html>
