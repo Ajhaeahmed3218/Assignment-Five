@@ -56,7 +56,7 @@
                     <h1 class="lg:text-7xl text-3xl text-white font-extrabold raleway">End-to-End Travel with</h1>
                 <h1 class="lg:text-7xl text-3xl text-[#1DD100] font-extrabold raleway">P Paribahan</h1>
                 <p class="lg:w-2/4 text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                <button class="btn bg-[#1DD100] text-black border-none font-bold btn-active btn-secondary mb-10 raleway">Buy Tickets</button>
+                <button onclick="scrollToSection('Paribahan')" class="btn bg-[#1DD100] text-black border-none font-bold btn-active btn-secondary mb-10 raleway">Buy Tickets</button>
                 </div>
                 
 
@@ -128,7 +128,7 @@
     </header>
     <main class="border-2 border-solid border-t-[#1DD100] lg:mt-[90px] rounded-[60px] bg-[#F7F8F8]">
         <!-- P.H Paribahan section  -->
-        <section class="container mx-auto lg:mt-[60px] mt-7">
+        <section id="Paribahan" class="container mx-auto lg:mt-[60px] mt-7">
             <div class="text-center flex flex-col items-center gap-y-5">
             <h1 class="text-[40px] font-bold raleway">P.H Paribahan</h1>
             <p class="text-[#03071299] w-2/4">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
@@ -161,7 +161,7 @@
                             <p class="text-[18px] font-semibold text-[#03071299] raleway">9:00 PM</p>
                         </div>
                         <hr class="border-dashed">
-                        <div class="flex justify-between">
+                        <div class="flex lg:flex-row flex-col justify-between">
                             <button class="btn btn-active bg-[#0307120d] border-none">Boarding Point - Laxmipur</button>
                             <button class="btn btn-active bg-[#0307120d] border-none">Dropping Point - Bogura</button>
                             <button class="btn btn-active bg-[#0307120d] border-none">Est. Time - 11 Hour</button>
@@ -185,11 +185,33 @@
                
             </div>
         </section>
+
+        <section  class="container mx-auto lg:mt-[60px] mt-7">
+            <div class="main-div grid grid-cols-2 p-7 bg-[#FFFFFF] rounded-2xl">
+                <div class="div-1  border-green-300 border-2 p-6">
+                    <div class="flex lg:flex-col gap-6">
+                        <h1 class="text-2xl font-semibold text-black">Select Your Seat</h1>
+                    <hr class="border-dashed ">
+                    <div class="flex justify-between">
+                        <div class="flex gap-3">
+                            <img src="B9A5-smart-ticketing-main/images/seat-gray.png" >
+                            <span class="text-[18px] text-[#03071280] ">Available</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <img src="B9A5-smart-ticketing-main/images/seat-green-filled.png" >
+                            <span class="text-[18px] text-[#1DD100] ">Selected</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="div-2 border-green-500 border-2"></div>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
