@@ -59,7 +59,7 @@
                 <div class="flex flex-col items-center text-center lg:gap-7 gap-4 lg:py-16">
                     <h1 class="lg:text-7xl text-3xl text-white font-extrabold raleway">End-to-End Travel with</h1>
                 <h1 class="lg:text-7xl text-3xl text-[#1DD100] font-extrabold raleway">P Paribahan</h1>
-                <p class="lg:w-2/4 text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <p class="lg:w-2/4 text-white">Experience seamless journeys with us. Reliable services, comfortable rides, and unforgettable adventures await. Your voyage, our commitment to excellence.</p>
                 <button onclick="scrollToSection('Paribahan')" class="btn bg-[#1DD100] text-black border-none font-bold btn-active btn-secondary mb-10 raleway">Buy Tickets</button>
                 </div>
                 
@@ -326,15 +326,14 @@
                 </div>
                 <div class="w-full  mt-7">
                     <h1 class="text-black font-semibold text-[18px] pb-5 ">Passenger Name*</h1>
-                    <input type="text" placeholder="Enter your name" class=" w-full h-fit p-5 border-gray-200 border-2" /
-                    >
+                    <input type="text" placeholder="Enter your name" class=" w-full h-fit p-5 border-gray-200 border-2"/>
                     <h1 class="text-black font-semibold text-[18px] py-5 ">Phone Number*</h1>
                     <input type="number" placeholder="Enter your phone numbe" class=" w-full h-fit p-5 border-gray-200 border-2" />
 
                     <h1 class="text-black font-semibold text-[18px] py-5 ">Email ID</h1>
                     <input type="email" placeholder="Enter your email id" class=" w-full h-fit p-5 border-gray-200 border-2" />
 
-                    <button class="btn disabled w-full mt-6 bg-[#1DD100]  text-white font-extrabold text-[20px]">Next</button>
+                    <button onclick="my_modal_5.showModal()" type="button" disabled id="next-btn" class="btn   w-full mt-6 bg-[#1DD100]  text-white font-extrabold text-[20px]">Next</button>
                     <div class="lg:flex justify-between mt-6 ">
                         
                         <p class="underline"><a>Terms and Conditions</a></p>
@@ -345,6 +344,26 @@
             </div>
         </section>
     </main>
+    <section>
+        <!-- Open the modal using ID.showModal() method -->
+    
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center text-center">
+            <img src="B9A5-smart-ticketing-main/images/success.png" alt="" srcset="">
+        <p class="py-4 text-black">Thank you for Booking Our Bus Seats. 
+            We are working hard to find the best service and deals for you. </p>
+            <p class="text-black">Shortly you will find a confirmation in your email.</p>
+        </div>
+        <div class="modal-action">
+        <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn bg-[#1DD100] px-11">Close</button>
+        </form>
+        </div>
+    </div>
+    </dialog>
+    </section>
     
         <footer class="footer p-10 bg-black text-neutral-content lg:pt-20 px-12">
             <aside class="lg:pl-[50px] lg:flex flex-col gap-10 raleway">
@@ -367,6 +386,7 @@
                 <p>Privacy policy</p>
               </div>
             </nav>
+            
           </footer>
     
     <script src="utility.js"></script>

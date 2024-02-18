@@ -34,7 +34,10 @@ let sum = 0;
     //    grend total 
     document.getElementById("grend-total").innerText=totalPrice
 
- 
+            if (seatsLeft>0) {
+                const myButton = document.getElementById("next-btn")
+                     myButton.removeAttribute("disabled")
+            }
 
     }
     }
@@ -70,7 +73,3 @@ let sum = 0;
         }
                  
      })
-
-     if (sum>0) {
-        
-     }
