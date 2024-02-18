@@ -140,7 +140,7 @@
 
             <div class="grid lg:grid-cols-3 grid-cols-1 gap-4  items-start  bg-white ">
                 <div class="col-span-2  p-5">
-                    <div class=" flex justify-between items-center mb-4 ">
+                    <div class=" lg:flex justify-between items-center mb-4 ">
                         <div class="flex items-center gap-2">
                             <div>
                                 <img src="B9A5-smart-ticketing-main/images/bus-logo.png" alt="">
@@ -191,9 +191,9 @@
         </section>
 
         <section  class="container mx-auto lg:mt-[60px] mt-7">
-            <div class="main-div grid grid-cols-1 lg:grid-cols-5 p-7 lg:gap-x-5 bg-[#FFFFFF] rounded-2xl">
-                <div class="div-1 lg:col-span-3 border-green-300 border-2 p-6">
-                    <div class="flex lg:flex-col gap-7">
+            <div class="main-div grid grid-cols-1 lg:grid-cols-5 p-7  bg-[#FFFFFF] rounded-2xl">
+                <div class="div-1 lg:col-span-3 p-6">
+                    <div class="lg:flex lg:flex-col  gap-7">
                         <h1 class="text-2xl font-semibold text-black">Select Your Seat</h1>
                     <hr class="border-dashed ">
                     <div class="flex justify-between">
@@ -286,7 +286,7 @@
                     </div>
                 </div>
                 
-                <div class="div-2 col-span-2 border-green-500 border-2 p-6">
+                <div class="div-2 col-span-2 border-l-4 border-dashed  p-6">
                 <h1 class="text-2xl font-semibold text-black pb-7">Select Your Seat</h1>
                 <hr class="border-dashed ">
                 <div class="bg-[#F7F8F8] mt-5 p-6 rounded-2xl">
@@ -325,14 +325,31 @@
                         <h1>Total Price</h1>
                         <p>BDT <span>1100</span></p>
                       </div>
-                      <label class="input input-bordered flex items-center gap-2 mt-6 p-3">
+                      <label class="input input-bordered flex lg:flex-row flex-col items-center gap-4 lg:gap-2 mt-6 p-3">
                         <input type="text" class="grow" placeholder="Have any copupon?" />
                         <span class="badge badge-info bg-[#1DD100] py-5 px-6 rounded-xl text-white text-xl">Apply</span>
                       </label>
-                      <div class="mt-5 text-black font-medium inter flex justify-between ">
+                      <div class="lg:mt-5 mt-14 text-black font-medium inter flex justify-between  ">
                         <h1>Grand Total</h1>
                         <p>BDT <span>1100</span></p>
                       </div>
+                </div>
+                <div class="w-full  mt-7">
+                    <h1 class="text-black font-semibold text-[18px] pb-5 ">Passenger Name*</h1>
+                    <input type="text" placeholder="Enter your name" class=" w-full h-fit p-5 border-gray-200 border-2" /
+                    >
+                    <h1 class="text-black font-semibold text-[18px] py-5 ">Phone Number*</h1>
+                    <input type="number" placeholder="Enter your phone numbe" class=" w-full h-fit p-5 border-gray-200 border-2" />
+
+                    <h1 class="text-black font-semibold text-[18px] py-5 ">Email ID</h1>
+                    <input type="email" placeholder="Enter your email id" class=" w-full h-fit p-5 border-gray-200 border-2" />
+
+                    <button class="btn  w-full mt-6 bg-[#1DD100]  text-white font-extrabold text-[20px]">Next</button>
+                    <div class="lg:flex justify-between mt-6 ">
+                        
+                        <p class="underline"><a>Terms and Conditions</a></p>
+                        <p class="underline"><a>Cancellation Policy</a></p>
+                    </div>
                 </div>
                 </div>    
             </div>
