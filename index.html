@@ -150,7 +150,7 @@
                                 <p class="text-xl inter">Coach-009-WEB ! AC_Business</p>
                             </div>
                         </div>
-                        <button class="btn btn-outline btn-secondary text-[18px] bg-[#1DD10026] border-none"><img src="B9A5-smart-ticketing-main/images/seat-green.png"><span class="text-[#1DD100]">40</span><span class="text-[#1DD100]">Seats left</span></button>
+                        <button class="btn btn-outline btn-secondary text-[18px] bg-[#1DD10026] border-none"><img src="B9A5-smart-ticketing-main/images/seat-green.png"><span id="seats-left" class="text-[#1DD100]">40</span><span class="text-[#1DD100]">Seats left</span></button>
                         
                     </div>
                     <div class="  bg-[#F7F8F8] p-6 mt-3 flex flex-col gap-9">
@@ -213,75 +213,75 @@
                     <div class="grid grid-cols-2 gap-3 mt-4">
                         <div class="grid grid-cols-5 gap-2">
                             <div id="A" >A</div>
-                            <div id="A1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">A1</div>
-                            <div id="A2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">A2</div>
+                            <div onclick="findId(this)" id="A1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">A1</div>
+                            <div onclick="findId(this)" id="A2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">A2</div>
 
                             <div id="B" >B</div>
-                            <div id="B1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">B1</div>
-                            <div id="B2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">B2</div>
+                            <div onclick="findId(this)" id="B1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">B1</div>
+                            <div onclick="findId(this)" id="B2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">B2</div>
 
                             <div id="C" >C</div>
-                            <div id="C1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">C1</div>
-                            <div id="C2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">C2</div>
+                            <div onclick="findId(this)" id="C1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">C1</div>
+                            <div onclick="findId(this)" id="C2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">C2</div>
 
                             <div id="D" >D</div>
-                            <div id="D1"class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">D1</div>
-                            <div id="D2"class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">D2</div>
+                            <div onclick="findId(this)" id="D1"class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">D1</div>
+                            <div onclick="findId(this)" id="D2"class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">D2</div>
 
                             <div id="E" >E</div>
-                            <div id="E1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">E1</div>
-                            <div id="E2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">E2</div>
+                            <div onclick="findId(this)" id="E1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">E1</div>
+                            <div onclick="findId(this)" id="E2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">E2</div>
 
                             <div id="F" >F</div>
-                            <div id="F1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">F1</div>
-                            <div id="F2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">F2</div>
+                            <div onclick="findId(this)" id="F1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">F1</div>
+                            <div onclick="findId(this)" id="F2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">F2</div>
                             
                             <div id="G" >G</div>
-                            <div id="G1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">G1</div>
-                            <div id="G2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">G2</div>
+                            <div onclick="findId(this)" id="G1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">G1</div>
+                            <div onclick="findId(this)" id="G2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">G2</div>
 
-                            <div id="J" >J</div>
-                            <div id="J1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">J1</div>
-                            <div id="J2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">J2</div>
+                            <div id="H" >H</div>
+                            <div onclick="findId(this)" id="H1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">H1</div>
+                            <div onclick="findId(this)" id="H2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">H2</div>
 
                             <div id="I" >I</div>
-                            <div id="I1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">I1</div>
-                            <div id="I2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">I2</div>
+                            <div onclick="findId(this)" id="I1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">I1</div>
+                            <div onclick="findId(this)" id="I2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">I2</div>
 
                             <div id="J" >J</div>
-                            <div id="J1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">J1</div>
-                            <div id="J2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">J2</div>
+                            <div onclick="findId(this)" id="J1" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">J1</div>
+                            <div onclick="findId(this)" id="J2" class="seat-class col-span-2 w-full py-6 flex justify-center rounded-lg">J2</div>
                         </div>
                         <div class="grid grid-cols-2 gap-2">
-                            <div id="A3" class="seat-class w-full py-6 flex justify-center rounded-lg">A3</div>
-                            <div id="A4" class="seat-class w-full py-6 flex justify-center rounded-lg">A4</div>
+                            <div onclick="findId(this)" id="A3" class="seat-class w-full py-6 flex justify-center rounded-lg">A3</div>
+                            <div onclick="findId(this)" id="A4" class="seat-class w-full py-6 flex justify-center rounded-lg">A4</div>
                             
-                            <div id="B3" class="seat-class w-full py-6 flex justify-center rounded-lg">B3</div>
-                            <div id="B4" class="seat-class w-full py-6 flex justify-center rounded-lg">B4</div>
+                            <div onclick="findId(this)" id="B3" class="seat-class w-full py-6 flex justify-center rounded-lg">B3</div>
+                            <div onclick="findId(this)" id="B4" class="seat-class w-full py-6 flex justify-center rounded-lg">B4</div>
 
-                            <div id="C3" class="seat-class w-full py-6 flex justify-center rounded-lg">C3</div>
-                            <div id="C4" class="seat-class w-full py-6 flex justify-center rounded-lg">C4</div>
+                            <div onclick="findId(this)" id="C3" class="seat-class w-full py-6 flex justify-center rounded-lg">C3</div>
+                            <div onclick="findId(this)" id="C4" class="seat-class w-full py-6 flex justify-center rounded-lg">C4</div>
 
-                            <div id="D3" class="seat-class w-full py-6 flex justify-center rounded-lg">D3</div>
-                            <div id="D4" class="seat-class w-full py-6 flex justify-center rounded-lg">D4</div>
+                            <div onclick="findId(this)" id="D3" class="seat-class w-full py-6 flex justify-center rounded-lg">D3</div>
+                            <div onclick="findId(this)" id="D4" class="seat-class w-full py-6 flex justify-center rounded-lg">D4</div>
 
-                            <div id="E3" class="seat-class w-full py-6 flex justify-center rounded-lg">E3</div>
-                            <div id="E4" class="seat-class w-full py-6 flex justify-center rounded-lg">E4</div>
+                            <div onclick="findId(this)" id="E3" class="seat-class w-full py-6 flex justify-center rounded-lg">E3</div>
+                            <div onclick="findId(this)" id="E4" class="seat-class w-full py-6 flex justify-center rounded-lg">E4</div>
 
-                            <div id="F3" class="seat-class w-full py-6 flex justify-center rounded-lg">F3</div>
-                            <div id="F4" class="seat-class w-full py-6 flex justify-center rounded-lg">F4</div>
+                            <div onclick="findId(this)" id="F3" class="seat-class w-full py-6 flex justify-center rounded-lg">F3</div>
+                            <div onclick="findId(this)" id="F4" class="seat-class w-full py-6 flex justify-center rounded-lg">F4</div>
                             
-                            <div id="G3" class="seat-class w-full py-6 flex justify-center rounded-lg">G3</div>
-                            <div id="G4" class="seat-class w-full py-6 flex justify-center rounded-lg">G4</div>
+                            <div onclick="findId(this)" id="G3" class="seat-class w-full py-6 flex justify-center rounded-lg">G3</div>
+                            <div onclick="findId(this)" id="G4" class="seat-class w-full py-6 flex justify-center rounded-lg">G4</div>
 
-                            <div id="J3" class="seat-class w-full py-6 flex justify-center rounded-lg">J3</div>
-                            <div id="J4" class="seat-class w-full py-6 flex justify-center rounded-lg">J4</div>
+                            <div onclick="findId(this)" id="H3" class="seat-class w-full py-6 flex justify-center rounded-lg">H3</div>
+                            <div onclick="findId(this)" id="H4" class="seat-class w-full py-6 flex justify-center rounded-lg">H4</div>
 
-                            <div id="I3" class="seat-class w-full py-6 flex justify-center rounded-lg">I3</div>
-                            <div id="I4" class="seat-class w-full py-6 flex justify-center rounded-lg">I4</div>
+                            <div onclick="findId(this)" id="I3" class="seat-class w-full py-6 flex justify-center rounded-lg">I3</div>
+                            <div onclick="findId(this)" id="I4" class="seat-class w-full py-6 flex justify-center rounded-lg">I4</div>
 
-                            <div id="J3" class="seat-class w-full py-6 flex justify-center rounded-lg">J3</div>
-                            <div id="J4" class="seat-class w-full py-6 flex justify-center rounded-lg">J4</div>
+                            <div onclick="findId(this)" id="J3" class="seat-class w-full py-6 flex justify-center rounded-lg">J3</div>
+                            <div onclick="findId(this)" id="J4" class="seat-class w-full py-6 flex justify-center rounded-lg">J4</div>
                         </div>
                     </div>
                 </div>
@@ -296,26 +296,16 @@
                           <thead>
                             <tr class="text-xl font-medium inter text-black">
                               
-                              <th >Seat<span>1</span></th>
+                              <th >Seat <span id="seat-number" class="bg-[#1dd100] px-2 rounded-md text-white">0</span></th>
                               <th>Class</th>
                               <th>Price</th>
                             </tr>
                           </thead>
                           <tbody id="table-body">
                             <!-- row 1 -->
-                            <tr>
-                              
-                              <td>C2</td>
-                              <td>Economoy</td>
-                              <td>550</td>
-                            </tr>
+                            
                             <!-- row 2 -->
-                            <tr class="hover">
-                              
-                              <td>C4</td>
-                              <td>Economoy</td>
-                              <td>550</td>
-                            </tr>
+                            
                             
                           </tbody>
                         </table>
@@ -323,7 +313,7 @@
                       <hr>
                       <div class="mt-5 text-black font-medium inter flex justify-between ">
                         <h1>Total Price</h1>
-                        <p>BDT <span>1100</span></p>
+                        <p>BDT <span id="total-price">0</span></p>
                       </div>
                       <label class="input input-bordered flex lg:flex-row flex-col items-center gap-4 lg:gap-2 mt-6 p-3">
                         <input type="text" class="grow" placeholder="Have any copupon?" />
@@ -331,7 +321,7 @@
                       </label>
                       <div class="lg:mt-5 mt-14 text-black font-medium inter flex justify-between  ">
                         <h1>Grand Total</h1>
-                        <p>BDT <span>1100</span></p>
+                        <p>BDT <span id="grend-total">0</span></p>
                       </div>
                 </div>
                 <div class="w-full  mt-7">
@@ -379,7 +369,7 @@
             </nav>
           </footer>
     
-
+    <script src="utility.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
